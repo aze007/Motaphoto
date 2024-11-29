@@ -8,8 +8,22 @@
 </head>
 <body <?php body_class(); ?>>
     <header>
-        <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
-        <nav>
-            <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
-        </nav>
+        <div class="header-wrapper">
+            <div class="header-container">
+                <h1 class="site-logo">
+                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" width="345" height="22">
+                    </a>
+                </h1>
+                <nav class="main-navigation">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'main-menu',
+                        'menu_class' => 'nav-menu',
+                    ));
+                    ?>
+                </nav>
+            </div>
+        </div>
     </header>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/nathalie-11.jpeg" alt="<?php bloginfo('name'); ?>" width="1440" height="962">

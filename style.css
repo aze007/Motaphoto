@@ -9,3 +9,47 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: motaphoto
 */
+
+body{
+    width: 1440px;
+    height: 80px;
+    margin: 0 auto;
+}
+.header-container {
+    width: 1440px;
+    height: 80px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+   
+    border-radius: 5px;
+    
+    
+}
+
+.site-logo {
+    margin: 0;
+}
+
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 40px; /* Ajustez la marge entre les éléments du menu */
+}
+
+.nav-menu li:first-child {
+    margin-left: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000; /* Changez la couleur du texte si nécessaire */
+}
