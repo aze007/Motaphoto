@@ -22,34 +22,101 @@ body{
     align-items: center;
     display: flex;
     justify-content: space-between;
-   
-    border-radius: 5px;
-    
-    
+    border-radius: 5px;      
 }
-
 .site-logo {
     margin: 0;
 }
-
-
-
 .nav-menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 .nav-menu li {
     margin-left: 40px; /* Ajustez la marge entre les éléments du menu */
 }
-
 .nav-menu li:first-child {
     margin-left: 0;
 }
-
 .nav-menu a {
     text-decoration: none;
     color: #000; /* Changez la couleur du texte si nécessaire */
+}
+.main-navigation{
+    display: flex;
+}
+/* Style pour le bouton */
+#contact-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Le fond de la modal (couvre tout l'écran) */
+.contact-modal {
+    display: none; /* Cachée par défaut */
+    position: fixed; /* Positionné par rapport à la fenêtre */
+    z-index: 1; /* Au-dessus de tout autre contenu */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largeur totale */
+    height: 100%; /* Hauteur totale */
+    overflow: auto; /* Activer le défilement si nécessaire */
+    background-color: rgb(0,0,0); /* Noir avec opacité */
+    background-color: rgba(0,0,0,0.4); /* Noir avec opacité */
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+}
+
+/* Le contenu de la modal */
+.contact-modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largeur */
+    max-width: 500px; /* Largeur maximale */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Conteneur pour centrer les éléments du formulaire */
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 597px;
+   height: 700px;
+    padding-top: 40px;
+
+}
+
+/* Le bouton de fermeture */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+.contact-form-container input[type="submit"] {
+    width: 315px;
+    height: 30px;
+    border-radius: 5px;
+    background: #d8d8d8;
+}
+.contact-form-container input {
+    width: 315px;
+    height: 30px;
+    border-radius: 5px;
 }

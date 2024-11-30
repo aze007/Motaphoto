@@ -4,6 +4,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -16,13 +17,20 @@
                     </a>
                 </h1>
                 <nav class="main-navigation">
+                    
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'main-menu',
                         'menu_class' => 'nav-menu',
                     ));
                     ?>
+                    
+                    
                 </nav>
+                <div id="contact-btn">
+                      <a href=""><h4>CONTACT</h3></a>
+                      </div>
+
             </div>
         </div>
     </header>
